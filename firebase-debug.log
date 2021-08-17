@@ -1,0 +1,103 @@
+[debug] [2021-08-17T19:50:31.004Z] ----------------------------------------------------------------------
+[debug] [2021-08-17T19:50:31.004Z] Command:       /opt/homebrew/Cellar/node/16.5.0/bin/node /opt/homebrew/bin/firebase init
+[debug] [2021-08-17T19:50:31.005Z] CLI Version:   9.16.5
+[debug] [2021-08-17T19:50:31.005Z] Platform:      darwin
+[debug] [2021-08-17T19:50:31.005Z] Node Version:  v16.5.0
+[debug] [2021-08-17T19:50:31.005Z] Time:          Tue Aug 17 2021 12:50:31 GMT-0700 (Pacific Daylight Time)
+[debug] [2021-08-17T19:50:31.006Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-17T19:50:31.008Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-17T19:50:31.008Z] > authorizing via signed-in user (hunorptorok@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/hunortorok/Desktop/Portfolio Website/Portfolio-Website
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-08-17T19:50:48.663Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-17T19:50:48.664Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-17T19:50:48.911Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 17 Aug 2021 19:50:48 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-17T19:50:48.954Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"portfolio-website","name":"portfolio-website"}
+[debug] [2021-08-17T19:50:49.272Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 17 Aug 2021 19:50:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=126","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-17T19:50:49.272Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2021-08-17T19:50:49.480Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at module.exports (/opt/homebrew/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/opt/homebrew/lib/node_modules/firebase-tools/lib/api.js:41:35)
+    at Request.self.callback (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (node:events:394:28)
+    at Request.emit (node:domain:470:12)
+    at Request.<anonymous> (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at Request.emit (node:events:394:28)
+    at Request.emit (node:domain:470:12)
+    at IncomingMessage.<anonymous> (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (node:events:513:28)
+    at IncomingMessage.emit (node:events:406:35)
+    at IncomingMessage.emit (node:domain:470:12)
+    at endReadableNT (node:internal/streams/readable:1331:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID portfolio-website. Please try again with a unique project ID.
+[debug] [2021-08-17T19:50:57.110Z] ----------------------------------------------------------------------
+[debug] [2021-08-17T19:50:57.110Z] Command:       /opt/homebrew/Cellar/node/16.5.0/bin/node /opt/homebrew/bin/firebase init
+[debug] [2021-08-17T19:50:57.111Z] CLI Version:   9.16.5
+[debug] [2021-08-17T19:50:57.111Z] Platform:      darwin
+[debug] [2021-08-17T19:50:57.111Z] Node Version:  v16.5.0
+[debug] [2021-08-17T19:50:57.111Z] Time:          Tue Aug 17 2021 12:50:57 GMT-0700 (Pacific Daylight Time)
+[debug] [2021-08-17T19:50:57.111Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-17T19:50:57.114Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-17T19:50:57.114Z] > authorizing via signed-in user (hunorptorok@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/hunortorok/Desktop/Portfolio Website/Portfolio-Website
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-08-17T19:51:33.123Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"portfolio-website10250903","name":"Portfolio Website"}
+[debug] [2021-08-17T19:51:33.519Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Aug 2021 19:51:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=188","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-17T19:51:33.524Z] > refreshing access token with scopes: []
+[debug] [2021-08-17T19:51:33.524Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-17T19:51:33.739Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 17 Aug 2021 19:51:33 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-17T19:51:33.789Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7274106147089509026 [none]
+[debug] [2021-08-17T19:51:34.330Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7274106147089509026 200
+[debug] [2021-08-17T19:51:34.330Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7274106147089509026 {"name":"operations/cp.7274106147089509026","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2021-08-17T19:51:34.526Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (/opt/homebrew/lib/node_modules/firebase-tools/lib/operation-poller.js:23:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createCloudProject (/opt/homebrew/lib/node_modules/firebase-tools/lib/management/projects.js:181:29)
+    at async Object.createFirebaseProjectAndLog (/opt/homebrew/lib/node_modules/firebase-tools/lib/management/projects.js:46:9)
+    at async promptAndCreateNewProject (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/features/project.js:32:12)
+    at async Object.doSetup [as project] (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/features/project.js:87:27)
+    at async init (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
